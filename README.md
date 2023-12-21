@@ -1,4 +1,4 @@
-Certainly! Here's a broader classification based on different machine learning algorithms:
+Classification of Machine Learning Algorithms and Implementation in Python
 
 ### Supervised Learning Algorithms:
 1. **Linear Regression:**

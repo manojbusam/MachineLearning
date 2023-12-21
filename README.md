@@ -3,7 +3,7 @@ Classification of Machine Learning Algorithms and Implementation in Python
 ### Supervised Learning Algorithms:
 1. **Linear Regression:**
    - Used for predicting continuous numeric values.
-   - Example: Predicting house prices based on features like area, number of bedrooms, etc.
+   - Example: Predicting house prices based on area
 
 2. **Logistic Regression:**
    - Used for binary classification problems.

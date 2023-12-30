@@ -1,7 +1,7 @@
-Classification of Machine Learning Algorithms and Implementation in Python
+### Classification of Machine Learning Algorithms and Implementation in Python
 
-#### Supervised Learning Algorithms:
-1. Classification Algorithms:
+### Supervised Learning Algorithms:
+**1. Classification Algorithms:**
 
 a. **Logistic Regression:** Despite its name, it's a linear model used for binary classification.
 
@@ -27,7 +27,7 @@ f. **Support Vector Machines (SVM):** Creates a hyperplane to separate classes i
 
    Example: Detecting whether a credit card transaction is fraudulent or legitimate based on transaction history.
 
-2. Regression Algorithms:
+**2. Regression Algorithms**
 
 a. **Linear Regression:** Predicts continuous values using a linear equation.
 
@@ -53,7 +53,7 @@ f. **Gradient Boosting Machines:** Ensemble method building trees sequentially t
 
    Example: Forecasting stock prices based on historical market data and economic indicators.
 
-3. Neural Network-Based:
+**3. Neural Network-Based:**
 
 a. **Multi-layer Perceptron (MLP):** Deep learning model with multiple layers of neurons.
 

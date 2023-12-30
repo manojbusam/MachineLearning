@@ -67,4 +67,22 @@
   - Reduces the dimensionality of data while retaining important information.
   - *Example:* Image compression in computer vision.
 
-### Semi-Supervised Lea
+### Semi-Supervised Learning Algorithms:
+
+- **Self-training:**
+  - Uses labeled and unlabeled data to improve accuracy.
+  - *Example:* Text classification with limited labeled data.
+
+- **Co-training:**
+  - Uses multiple views of the data to improve learning.
+  - *Example:* Image classification using different features of images.
+
+### Reinforcement Learning Algorithms:
+
+- **Q-Learning:**
+  - A model-free reinforcement learning algorithm used for making decisions.
+  - *Example:* Training an AI to play games like Pac-Man.
+
+- **Deep Q-Networks (DQN):**
+  - Combines deep learning with Q-learning for more complex tasks.
+  - *Example:* Training an AI to play complex video games.

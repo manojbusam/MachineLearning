@@ -25,7 +25,7 @@ e. **K-Nearest Neighbors (KNN):** Classifies data based on similarity to neighbo
 
 f. **Support Vector Machines (SVM):** Creates a hyperplane to separate classes in the input space.
 
-    Example: Detecting whether a credit card transaction is fraudulent or legitimate based on transaction history.
+   Example: Detecting whether a credit card transaction is fraudulent or legitimate based on transaction history.
 
 2. Regression Algorithms:
 
@@ -51,7 +51,7 @@ e. **Decision Trees (for Regression):** Applies tree-based structures for predic
 
 f. **Gradient Boosting Machines:** Ensemble method building trees sequentially to correct errors of previous models.
 
-    Example: Forecasting stock prices based on historical market data and economic indicators.
+   Example: Forecasting stock prices based on historical market data and economic indicators.
 
 3. Neural Network-Based:
 

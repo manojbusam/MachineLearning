@@ -1,6 +1,6 @@
 Classification of Machine Learning Algorithms and Implementation in Python
 
-### Supervised Learning Algorithms:
+#### Supervised Learning Algorithms:
 1. Classification Algorithms:
 
 a. **Logistic Regression:** Despite its name, it's a linear model used for binary classification.

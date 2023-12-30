@@ -27,7 +27,6 @@ f. **Support Vector Machines (SVM):** Creates a hyperplane to separate classes i
 
     Example: Detecting whether a credit card transaction is fraudulent or legitimate based on transaction history.
 
-
 2. Regression Algorithms:
 
 a. **Linear Regression:** Predicts continuous values using a linear equation.
@@ -53,7 +52,6 @@ e. **Decision Trees (for Regression):** Applies tree-based structures for predic
 f. **Gradient Boosting Machines:** Ensemble method building trees sequentially to correct errors of previous models.
 
     Example: Forecasting stock prices based on historical market data and economic indicators.
-
 
 3. Neural Network-Based:
 

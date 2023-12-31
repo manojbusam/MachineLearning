@@ -1,6 +1,35 @@
 ### Machine Learning Algorithms Overview
 
-Welcome to the Machine Learning Algorithms Overview! This guide offers a simplified insight into various machine learning techniques implemented using Python. Supervised learning methods like classification and regression are explored, including algorithms such as Logistic Regression, Decision Trees, and Neural Networks. Unsupervised techniques like Clustering and Dimensionality Reduction, along with semi-supervised and reinforcement learning methods, are also covered. Each algorithm is exemplified with practical applications, ranging from email spam detection and predicting house prices to image recognition and game strategy development. Explore this concise reference to grasp fundamental concepts and real-world implementations of diverse machine learning approaches.
+Welcome to the Machine Learning Algorithms Overview! This guide offers a simplified insight into various machine learning techniques implemented using Python. Supervised learning methods like classification and regression are explored, including algorithms such as Logistic Regression, Decision Trees, and Neural Networks. Unsupervised techniques like Clustering and Dimensionality Reduction, along with semi-supervised and reinforcement learning methods, are also covered. Each algorithm is exemplified with practical applications, ranging from email spam detection and predicting house prices to image recognition and game strategy development. Explore this concise reference to grasp fundamental concepts and real-world implementations of diverse machine-learning approaches.
+
+## Data Science Lifecycle
+## Step 1: Problem Identification and Planning
+
+Scientific Methods:
+- Research Methods: Surveys, interviews, literature reviews.
+- Hypothesis Formulation: Defining research questions.
+- Experimental Design: Structuring the approach.
+
+## Step 2: Data Collection
+
+Scientific Methods:
+- Observation and Measurement.
+- Sampling Techniques: Random, stratified, systematic.
+- Data Governance: Ensuring data integrity.
+
+## Step 3: Data Preparation & Analysis
+
+Scientific Methods:
+- Exploratory Data Analysis (EDA).
+- Data Cleaning: Handling inconsistencies.
+- Feature Engineering: Creating new features.
+
+## Step 4: Model Building
+
+Scientific Methods:
+- Model Development: Implementation and training.
+- Hyperparameter Tuning.
+- Algorithm Selection. The below techniques come under Machine Learning Algorithms
 
 #### Supervised Learning
 
@@ -40,3 +69,23 @@ Welcome to the Machine Learning Algorithms Overview! This guide offers a simplif
 
 - **Q-Learning:** Decision-making in uncertain environments (game strategies).
 - **Deep Q-Networks (DQN):** Deep learning for complex tasks (game AI training).
+
+## Step 5: Model Evaluation
+
+Scientific Methods:
+- Performance Metrics selection.
+- Cross-Validation: k-fold, stratified.
+- Bias-Variance Analysis.
+
+## Step 6: Model Deployment
+
+Scientific Methods:
+- Serialisation and Deployment.
+- Scalability and Efficiency.
+
+
+## Step 7: User Acceptance Stage
+
+Scientific Methods:
+- User Testing: Conducting UAT.
+- Feedback Analysis.

@@ -4,7 +4,18 @@
   <link rel="stylesheet" href="styles.css">
   <title>Manoj Busam</title>
   <style>
+    /* Resetting margin for the body */
+    body {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 40px;
+      margin-right: 40px;
+      font-family: 'Avenir', sans-serif; /* Your chosen font */
+      background-color: white; /* Set background to white */
+      color: navy; /* Navy blue text color */
+    }
 
+    /* Rest of your existing styles */
     .button {
       display: inline-block;
       padding: 10px 20px;
@@ -20,85 +31,93 @@
       background-color: #2980b9;
     }
 
-    body {
-      font-family: 'Avenir', sans-serif;
-      margin: 40px; 
-      /* Other styling */
-    }
-
-    
     h1, h2, h3 {
       color: #3498db;
     }
-    
+
     p {
       font-size: 16px;
     }
-    
+
     .scientific-methods {
       margin-left: 20px;
     }
-    
+
     .algorithm-types {
       margin-left: 40px;
     }
+
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      background-color: #87ceeb; /* Sky blue color */
+      padding: 10px;
+    }
+
+    /* Style for individual tabs */
+    .tab {
+      padding: 8px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      background-color: #87ceeb; /* Sky blue color */
+      color: white; /* Text color */
+    }
+
+    /* Hover effect for tabs */
+    .tab:hover {
+      background-color: #add8e6; /* Lighter blue on hover */
+    }
+
+    /* Initially hide tab content */
+    .tabcontent {
+      display: none;
+    }
+
+    /* Show active tab content */
+    .active {
+      display: block;
+    }
+
+    /* Style for the navy blue line in the margin section */
+    #contactme::before {
+      content: "";
+      display: block;
+      border-bottom: 3px solid #001f3f; /* Navy blue color */
+      margin: 0 -20px 20px -20px; /* Adjust margins to match the container padding */
+    }
+
+    
+
   </style>
 </head>
 <body>
-  <h1>About Me</h1>
-  <p>
-  With an unwavering passion for data science, I've been on an exploration journey within this captivating field. It's been an exciting pursuit, navigating the depths of data and its applications, seeking insights, and unraveling the mysteries it holds.
-  </p>
-
-  <h1>Data Science Lifecycle</h1>
-
-  <!-- Step 1: Problem Identification and Planning -->
-  <h2>Step 1: Problem Identification and Planning</h2>
-  <p>
-    Define objectives and scope using research, hypotheses, and experimental design.
-  </p>
-  <div class="scientific-methods">
-    <p>- Research Methods: Surveys, interviews, literature reviews.</p>
-    <p>- Hypothesis Formulation: Defining research questions.</p>
-    <p>- Experimental Design: Structuring the approach.</p>
+  
+  <div class="tabs">
+    <div class="tab" onclick="openTab(event, 'home')">Home</div>
+    <div class="tab" onclick="openTab(event, 'latestprojects')">Latest Data Science Projects</div>
+    <div class="tab" onclick="openTab(event, 'areaofinterest')">Areas of Interest</div>
+    <div class="tab" onclick="openTab(event, 'datascience')">Data Science Life Cycle</div>
+    <div class="tab" onclick="openTab(event, 'contactme')">Contact Me</div>
   </div>
-
-  <!-- Step 2: Data Collection -->
-  <h2>Step 2: Data Collection</h2>
-  <p>
-    Gather and preprocess data from various sources while ensuring data integrity.
-  </p>
-  <div class="scientific-methods">
-    <p>- Observation and Measurement.</p>
-    <p>- Sampling Techniques: Random, stratified, systematic.</p>
-    <p>- Data Governance: Ensuring data integrity.</p>
-  </div>
-
-  <!-- Step 3: Data Preparation & Analysis -->
-  <h2>Step 3: Data Preparation & Analysis</h2>
-  <p>
-    Analyze, visualize, and engineer features to derive insights from data.
-  </p>
-  <div class="scientific-methods">
-    <p>- Exploratory Data Analysis (EDA).</p>
-    <p>- Data Cleaning: Handling inconsistencies.</p>
-    <p>- Feature Engineering: Creating new features.</p>
-    
+  
+  <div id="home" class="tabcontent active">
+    <!-- Content for Areas of Interest -->
+    <h1>About Me</h1>
+    <p>
+    With an unwavering passion for data science, I've been on an exploration journey within this captivating field. It's been an exciting pursuit, navigating the depths of data and its applications, seeking insights, and unraveling the mysteries it holds.
+    </p>
 
   </div>
 
-  <!-- Step 4: Model Building -->
-  <h2>Step 4: Model Building</h2>
-  <p>
-    Develop and validate predictive models using various algorithms.
-  </p>
-  <div class="scientific-methods">
-    <p>- Model Development: Implementation and training.</p>
-    <p>- Hyperparameter Tuning.</p>
-    <p>- Algorithm Selection: Classification, Regression, Neural Networks.</p>
 
-    <h3>Examples:</h3>
+  
+  <div id="areaofinterest" class="tabcontent">
+    <!-- Content for My Latest Projects -->
+    <p>Content for My Latest Projects...</p>
+  </div>
 
+  <div id="latestprojects" class="tabcontent">
+    <!-- Content for Areas of Interest -->
     <p>
       <a href="https://github.com/manojbusam/DataScience/tree/main/a-LogisticRegression-Multivariate" target="_blank" class="button">LogisticRegression-Multivariate</a>
     </p>
@@ -106,49 +125,138 @@
       <a href="https://github.com/manojbusam/DataScience/tree/main/a-LogisticRegression" target="_blank" class="button">LogisticRegression</a>
     </p>
 
+  </div>
+  
+  <div id="datascience" class="tabcontent">
+    <!-- Content for My Latest Projects -->
+    <h1>Data Science Lifecycle</h1>
+
+    <!-- Step 1: Problem Identification and Planning -->
+    <h2>Step 1: Problem Identification and Planning</h2>
+    <p>
+      Define objectives and scope using research, hypotheses, and experimental design.
+    </p>
+    <div class="scientific-methods">
+      <p>- Research Methods: Surveys, interviews, literature reviews.</p>
+      <p>- Hypothesis Formulation: Defining research questions.</p>
+      <p>- Experimental Design: Structuring the approach.</p>
+    </div>
+
+    <!-- Step 2: Data Collection -->
+    <h2>Step 2: Data Collection</h2>
+    <p>
+      Gather and preprocess data from various sources while ensuring data integrity.
+    </p>
+    <div class="scientific-methods">
+      <p>- Observation and Measurement.</p>
+      <p>- Sampling Techniques: Random, stratified, systematic.</p>
+      <p>- Data Governance: Ensuring data integrity.</p>
+    </div>
+
+    <!-- Step 3: Data Preparation & Analysis -->
+    <h2>Step 3: Data Preparation & Analysis</h2>
+    <p>
+      Analyze, visualize, and engineer features to derive insights from data.
+    </p>
+    <div class="scientific-methods">
+      <p>- Exploratory Data Analysis (EDA).</p>
+      <p>- Data Cleaning: Handling inconsistencies.</p>
+      <p>- Feature Engineering: Creating new features.</p>
+      
+
+    </div>
+
+    <!-- Step 4: Model Building -->
+    <h2>Step 4: Model Building</h2>
+    <p>
+      Develop and validate predictive models using various algorithms.
+    </p>
+    <div class="scientific-methods">
+      <p>- Model Development: Implementation and training.</p>
+      <p>- Hyperparameter Tuning.</p>
+      <p>- Algorithm Selection: Classification, Regression, Neural Networks.</p>
+
+    </div>
+
+    <!-- Step 5: Model Evaluation -->
+    <h2>Step 5: Model Evaluation</h2>
+    <p>
+      Assess model performance using evaluation metrics and validation techniques.
+    </p>
+    <div class="scientific-methods">
+      <p>- Performance Metrics selection.</p>
+      <p>- Cross-Validation: k-fold, stratified.</p>
+      <p>- Bias-Variance Analysis.</p>
+    </div>
+
+    <!-- Step 6: Model Deployment -->
+    <h2>Step 6: Model Deployment</h2>
+    <p>
+      Integrate models into production considering scalability and efficiency.
+    </p>
+    <div class="scientific-methods">
+      <p>- Serialization and Deployment.</p>
+      <p>- Scalability and Efficiency considerations.</p>
+    </div>
+
+    <!-- Step 7: User Acceptance Stage -->
+    <h2>Step 7: User Acceptance Stage</h2>
+    <p>
+      Test user interactions and gather feedback for refinement.
+    </p>
+    <div class="scientific-methods">
+      <p>- User Testing: Conducting UAT.</p>
+      <p>- Feedback Analysis.</p>
+    </div>
+
+    <!-- Step 8: Monitoring and Maintenance -->
+    <h2>Step 8: Monitoring and Maintenance</h2>
+    <p>
+      Continuously monitor and adapt models to maintain relevance and effectiveness.
+    </p>
+    <div class="scientific-methods">
+      <p>- Continuous Performance Monitoring.</p>
+      <p>- Necessary Updates and Adaptations.</p>
+    </div>
 
   </div>
 
-  <!-- Step 5: Model Evaluation -->
-  <h2>Step 5: Model Evaluation</h2>
-  <p>
-    Assess model performance using evaluation metrics and validation techniques.
-  </p>
-  <div class="scientific-methods">
-    <p>- Performance Metrics selection.</p>
-    <p>- Cross-Validation: k-fold, stratified.</p>
-    <p>- Bias-Variance Analysis.</p>
+  <div id="contactme"  class="tabcontent">
+    <h1>Contact Information</h1>
+    <div>
+      <p>GitHub: <a href="https://github.com/manojbusam" target="_blank">https://github.com/manojbusam</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/manoj-busam/" target="_blank">https://www.linkedin.com/in/manoj-busam/</a></p>
+      <p>Email: <a href="mailto:manojbusam@outlook.com">manojbusam@outlook.com</a></p>
+      <p>Discord: <a href="https://discord.com/users/manoj0162" target="_blank">https://discord.com/users/manoj0162</a></p>
+    </div>
   </div>
+    
 
-  <!-- Step 6: Model Deployment -->
-  <h2>Step 6: Model Deployment</h2>
-  <p>
-    Integrate models into production considering scalability and efficiency.
-  </p>
-  <div class="scientific-methods">
-    <p>- Serialization and Deployment.</p>
-    <p>- Scalability and Efficiency considerations.</p>
-  </div>
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+    
+        // Hide all tab content
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+    
+        // Deactivate all tab links
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+    
+        // Show the specific tab content and set tab as active
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.classList.add("active");
+      }
+    </script>
 
-  <!-- Step 7: User Acceptance Stage -->
-  <h2>Step 7: User Acceptance Stage</h2>
-  <p>
-    Test user interactions and gather feedback for refinement.
-  </p>
-  <div class="scientific-methods">
-    <p>- User Testing: Conducting UAT.</p>
-    <p>- Feedback Analysis.</p>
-  </div>
 
-  <!-- Step 8: Monitoring and Maintenance -->
-  <h2>Step 8: Monitoring and Maintenance</h2>
-  <p>
-    Continuously monitor and adapt models to maintain relevance and effectiveness.
-  </p>
-  <div class="scientific-methods">
-    <p>- Continuous Performance Monitoring.</p>
-    <p>- Necessary Updates and Adaptations.</p>
-  </div>
 
+
+  
 </body>
 </html>

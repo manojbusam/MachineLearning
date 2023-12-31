@@ -1,9 +1,9 @@
-### Machine Learning Algorithms Overview
+### Data Science Overview
 
-Welcome to the Machine Learning Algorithms Overview! This guide offers a simplified insight into various machine learning techniques implemented using Python. Supervised learning methods like classification and regression are explored, including algorithms such as Logistic Regression, Decision Trees, and Neural Networks. Unsupervised techniques like Clustering and Dimensionality Reduction, along with semi-supervised and reinforcement learning methods, are also covered. Each algorithm is exemplified with practical applications, ranging from email spam detection and predicting house prices to image recognition and game strategy development. Explore this concise reference to grasp fundamental concepts and real-world implementations of diverse machine-learning approaches.
+The Data Science Lifecycle is a systematic approach used by data scientists to tackle real-world problems through data-driven solutions. It typically consists of several iterative stages aimed at extracting insights, creating predictive models, and deriving actionable conclusions from data. While variations exist, a common framework involves:
 
-## Data Science Lifecycle
 ## Step 1: Problem Identification and Planning
+Identifying and understanding the problem or question that needs to be addressed using data. This involves defining objectives, success metrics, and outlining the scope of the project.
 
 Scientific Methods:
 - Research Methods: Surveys, interviews, literature reviews.
@@ -11,6 +11,7 @@ Scientific Methods:
 - Experimental Design: Structuring the approach.
 
 ## Step 2: Data Collection
+Gathering relevant data from various sources, which may include databases, APIs, files, or other repositories. This step involves cleaning and preprocessing the data to ensure its quality and suitability for analysis.
 
 Scientific Methods:
 - Observation and Measurement.
@@ -18,6 +19,9 @@ Scientific Methods:
 - Data Governance: Ensuring data integrity.
 
 ## Step 3: Data Preparation & Analysis
+Exploratory Data Analysis (EDA): Analyzing and exploring the data to understand its patterns, relationships, and characteristics. This phase involves statistical analysis, data visualization, and hypothesis testing to uncover insights and trends.
+
+Feature Engineering: Selecting, transforming, and creating relevant features from the data that will be used to train machine learning models. This step aims to improve the model's performance by highlighting important aspects of the data.
 
 Scientific Methods:
 - Exploratory Data Analysis (EDA).
@@ -25,6 +29,7 @@ Scientific Methods:
 - Feature Engineering: Creating new features.
 
 ## Step 4: Model Building
+Building and training predictive models using various machine learning or statistical techniques. This involves selecting appropriate algorithms, tuning hyperparameters, and validating the model's performance.
 
 Scientific Methods:
 - Model Development: Implementation and training.
@@ -71,6 +76,7 @@ Scientific Methods:
 - **Deep Q-Networks (DQN):** Deep learning for complex tasks (game AI training).
 
 ## Step 5: Model Evaluation
+Assessing the performance of the developed models using evaluation metrics and validation techniques. This step helps in selecting the best-performing model for deployment.
 
 Scientific Methods:
 - Performance Metrics selection.
@@ -78,6 +84,7 @@ Scientific Methods:
 - Bias-Variance Analysis.
 
 ## Step 6: Model Deployment
+Integrating the chosen model into the production environment, making it available for use in real-world scenarios. This involves considerations for scalability, efficiency, and monitoring its performance over time.
 
 Scientific Methods:
 - Serialisation and Deployment.
@@ -89,3 +96,6 @@ Scientific Methods:
 Scientific Methods:
 - User Testing: Conducting UAT.
 - Feedback Analysis.
+
+## Step 8: Monitoring and Maintenance: 
+Continuously monitoring the deployed model's performance, making necessary updates or improvements, and adapting to changes in data or the environment. This step ensures that the model remains relevant and effective over time.

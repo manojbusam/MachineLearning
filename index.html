@@ -35,6 +35,10 @@
     h1 {
       color: #333333;;
     }
+
+    h1 {
+      text-align: center; /* Center align the h1 */
+    }
     
     h2, h3, p {
        color: #333333;; /* Light red color */
@@ -55,7 +59,7 @@
     .tabs {
       display: flex;
       justify-content: space-around;
-      background-color: #FF6347; /* Red color */
+      background-color: #B2BEB5; /* Red color */
       padding: 10px;
     }
 
@@ -64,13 +68,13 @@
       padding: 8px 20px;
       cursor: pointer;
       transition: background-color 0.3s ease-in-out;
-      background-color: #FF6347; /* Red color */
+      background-color: #B2BEB5; /* Red color */
       color: white; /* Text color */
     }
 
     /* Hover effect for tabs */
     .tab:hover {
-      background-color: #FF6347; /* Red color */
+      background-color: #B2BEB5; /* Red color */
     }
 
     /* Initially hide tab content */
@@ -82,6 +86,27 @@
     .active {
       display: block;
     }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh; /* Adjust as needed */
+    }
+
+    .content {
+      background-color: #f2f2f2; /* Light gray background */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+      text-align: center; /* Align text in the center */
+      font-family: 'Avenir', sans-serif;  /* Font family */
+      color: #333; /* Text color */
+      width: 80%; /* Adjust width as needed */
+      max-width: 6000px; /* Limit maximum width */
+      font-size: 30px;
+    }
+
 
   </style>
 </head>
@@ -96,12 +121,28 @@
   </div>
   
   <div id="home" class="tabcontent active">
-    <!-- Content for Areas of Interest -->
-    <h1>About Me</h1>
-    <p>
-    With an unwavering passion for data science, I've been on an exploration journey within this captivating field. It's been an exciting pursuit, navigating the depths of data and its applications, seeking insights, and unraveling the mysteries it holds.
-    </p>
 
+    
+    <!-- Content for Areas of Interest -->
+    <h1>About me</h1>
+    <div class="container">
+      <div class="content">
+        <!-- Your content goes here -->
+        Manoj Busam
+      </div>
+    </div>
+    <div class="container">
+      <div class="content">
+        <!-- Your content goes here -->
+        Data Scientist | Machine Learning Engineer
+      </div>
+    </div>
+    <div class="container">
+      <div class="content">
+        <!-- Your content goes here -->
+        With an unwavering passion for data science, I've been on an exploration journey within this captivating field. It's been an exciting pursuit, navigating the depths of data and its applications, seeking insights, and unraveling the mysteries it holds.
+      </div>
+    </div>
   </div>
 
   <div id="areaofinterest" class="tabcontent">
@@ -224,8 +265,7 @@
     </div>
   </div>
     
-
-    <script>
+  <script>
       function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
     
@@ -245,7 +285,7 @@
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.classList.add("active");
       }
-    </script>
+  </script>
 
 
 

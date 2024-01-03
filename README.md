@@ -2,6 +2,17 @@
 
 The Data Science Lifecycle is a systematic approach used by data scientists to tackle real-world problems through data-driven solutions. It typically consists of several iterative stages aimed at extracting insights, creating predictive models, and deriving actionable conclusions from data. While variations exist, a common framework involves:
 
+| Tools and Versions           | Dependencies                 | Scientific Methods          |
+|------------------------------|------------------------------|-----------------------------|
+| [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/) | [![Matplotlib](https://img.shields.io/badge/Matplotlib-3.4.3-yellowgreen)](https://matplotlib.org/) | **Research Methods** [![Research Methods](https://img.shields.io/badge/Research-Methods-blue)](#) |
+| [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)](https://jupyter.org/) | [![Seaborn](https://img.shields.io/badge/Seaborn-0.11.2-brightgreen)](https://seaborn.pydata.org/) | **Hypothesis Formulation** [![Hypothesis Formulation](https://img.shields.io/badge/Hypothesis-Formulation-blue)](#) |
+| [![Pandas](https://img.shields.io/badge/Pandas-1.3.3-green)](https://pandas.pydata.org/) | [![SciPy](https://img.shields.io/badge/SciPy-1.7.3-blue)](https://www.scipy.org/) | **Experimental Design** [![Experimental Design](https://img.shields.io/badge/Experimental-Design-blue)](#) |
+| [![NumPy](https://img.shields.io/badge/NumPy-1.21.4-yellow)](https://numpy.org/) | [![NLTK](https://img.shields.io/badge/NLTK-3.6.5-orange)](https://www.nltk.org/) |                             |
+| [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-0.24.2-blueviolet)](https://scikit-learn.org/) |                               |                             |
+| [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.7.0-orange)](https://www.tensorflow.org/) |                               |                             |
+| [![Keras](https://img.shields.io/badge/Keras-2.8.0-red)](https://keras.io/) |                               |                             |
+
+
 ## Step 1: Problem Identification and Planning
 Identifying and understanding the problem or question that needs to be addressed using data. This involves defining objectives, success metrics, and outlining the scope of the project.
 

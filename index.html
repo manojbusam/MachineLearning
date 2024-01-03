@@ -11,8 +11,8 @@
       margin-left: 40px;
       margin-right: 40px;
       font-family: 'Avenir', sans-serif; /* Your chosen font */
-      background-color: #F0F0F0; 
-      color: navy; /* Navy blue text color */
+      background-color: whitesmoke; 
+      color: black; /* Navy blue text color */
       background-size: cover; /* Cover the entire viewport */
       background-repeat: no-repeat; /* Prevent image repetition */
     }
@@ -62,26 +62,25 @@
       margin-left: 40px;
     }
 
-    .tabs {
+    /* Container for the tabs */
+    .tabs-container {
       display: flex;
-      justify-content: space-around;
-      background-color: lightslategray; /* Red color */
-      padding: 10px;
+      flex-direction: column; /* Align items vertically */
+      align-items: flex-end; /* Align tabs to the right */
     }
 
-    /* Style for individual tabs */
+    .tab-list {
+      list-style: none; /* Remove default list styles */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      display: flex; /* Display list items as flex */
+    }
+
     .tab {
-      padding: 8px 20px;
+      padding: 8px;
+      margin-left: 10px;
       cursor: pointer;
-      transition: background-color 0.3s ease-in-out;
-      background-color: lightslategray; /* Red color */
-      color: white; /* Text color */
-    }
-
-    /* Hover effect for tabs */
-    .tab:hover {
-      background-color: white; /* Red color */
-      color: black;
+      transition: background-color 0.3s ease;
     }
 
     /* Initially hide tab content */
@@ -122,25 +121,6 @@
       font-weight: bold;
     }
 
-    .project-button {
-      background-color: #FF671F;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: background-color 0.3s;
-    }
-    .project-button:hover {
-      background-color: #ffe1d3;
-      color: navy;
-    }
-
     .project-button-2 {
       background-color: white;
       border: none;
@@ -161,7 +141,7 @@
     }
 
     .project-button-3 {
-      background-color: green;
+      background-color: red;
       border: none;
       color: white;
       padding: 10px 20px;
@@ -175,12 +155,12 @@
       transition: background-color 0.3s;
     }
     .project-button-3:hover {
-      background-color: lightgreen;
+      background-color: lightcoral;
       color: navy;
     }
 
     .project-button {
-      background-color: #FF671F;
+      background-color: blue;
       border: none;
       color: white;
       padding: 10px 20px;
@@ -194,42 +174,75 @@
       transition: background-color 0.3s;
     }
     .project-button:hover {
-      background-color: #ffe1d3;
+      background-color: lightblue;
       color: navy;
     }
 
-    footer {
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: rgb(163, 187, 211);
-      color: #333;
-      text-align: center;
-      padding: 8px 20px;
-    }
+/* Styling for an awesome footer */
+footer {
+  left: 0;
+  bottom: 0;
+  background-color: whitesmoke;
+  color: #333;
+  text-align: center;
+  /* Making the text more vibrant */
+  font-weight: bold;
+  font-size: 14px;
+  /* Adding some animation */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect to make it interactive */
+footer:hover {
+  background-color: lightgrey;
+}
+
+.container-name {
+  position: relative;
+  height: 5vh; /* Set the container height to occupy the full viewport height */
+}
+
+.green-dot {
+  font-size: 2em; /* Adjust the font-size to make the dot bigger */
+  color: black; /* Set the color to green */
+  top: .25px; /* Position from top */
+  left: 10px; /* Position from left */
+}
 
 
   </style>
 </head>
 <body>
-  
-  <div class="tabs">
-    <div class="tab" onclick="openTab(event, 'home')">Home</div>
-    <div class="tab" onclick="openTab(event, 'latestprojects')">Latest Data Science Projects</div>
-    <div class="tab" onclick="openTab(event, 'areaofinterest')">Areas of Interest</div>
+
+  <div class="container-name">
+    <p class="green-dot"> MANOJ BUSAM - Sr. Software Engineer in Data Science</p>
+
   </div>
   
+  <div class="tabs-container">
+    <ul class="tab-list"> 
+    <li class="tab" onclick="openTab(event, 'home')">Home</li>
+    <li class="tab" onclick="openTab(event, 'latestprojects')">Latest Data Science Projects</li>
+    <li class="tab" > <a href="https://1drv.ms/w/c/fa246038249ec0c6/ERinEBRwPCBFmwYda2pr3LkBm2NPqyLzWVO1xYX6-1Un3w?e=6g7zGg" target="_blank" >My CV</a> </li>  
+    </ul>
+  </div>
+
+
   <div id="home" class="tabcontent active">
-
-    <h2>
-      Manoj Busam
-    </h2>
-
     <p>
-      As a Senior Software Engineer deeply immersed in Data Science, my specialization includes:
+      As a Software Engineer in the field of Data Science, my specialization includes:
       <ul>
         <li>ML: Search, Recommendations, Personalization</li>
-        <li>Neural Networks Focus</li>
+        <li>Convolutional Neural Networks (CNN)</li>
+        <li>Natural Language Processing (NLP)</li>
+        <li>Generative AI</li>
+        <li>Reinforcement Learning</li>
+        <li>Pattern Recognition</li>
+        <li>Augmented Reality & Virtual Reality</li>
+        <li>ML Infrastructure</li>
+        <li>Exploratory Data Analysis (EDA)</li>
+        <li>Web Scrapping</li>
+        <li>LangChain</li>
         <li>Strong Math Base</li>
       </ul>
       With 7 years of professional experience in Data Science, my journey has centered on:
@@ -239,10 +252,10 @@
         <li>Value Enhancement</li>
         <li>Fast Shipment</li>
       </ul>
-      Here are 5 fundamental stages of a product in my data science journey after Problem Identification and before Customer Acceptance(some with my reference projects):
+      In my data science journey after Problem Identification and before Customer Acceptance , these are the fundamental steps which i have used to finish a Datascience Lifecycle :
     </p>
         
-    <p class="bold-text"> ⚙️ Step 1: Data Collecting Pipelines
+    <p class="bold-text"> ⚙️ 1: Data Collecting Pipelines
     
     <a href="https://github.com/manojbusam/WebScrapping" target="_blank"><button class="project-button">Web Scrapping</button></a>
     <a href="https://github.com/manojbusam/SourcetoCloud" target="_blank"><button class="project-button">Copy-Source-to-Cloud</button></a>
@@ -250,7 +263,7 @@
 
     </p>
 
-    <p class="bold-text"> 📊 Step 2: Data Preparation & Analysis
+    <p class="bold-text"> 📊 2: Data Preparation & Analysis
     
       <a href="https://github.com/manojbusam/Statistics" target="_blank"><button class="project-button">Statistics</button></a>
       <a target="_blank"><button class="project-button"> Data Visualization </button></a>
@@ -260,7 +273,7 @@
   
     </p>
 
-    <p class="bold-text"> 🛠️ Step 3: Model Building
+    <p class="bold-text"> 🛠️ 3: Model Building
       <a href="https://github.com/manojbusam/DataScience" target="_blank"><button class="project-button-2">Machine Learning</button></a>
       <a target="_blank"><button class="project-button-2">Deep Learning</button></a>
       <a target="_blank"><button class="project-button-2">Convolutional Neural Networks</button></a>
@@ -268,13 +281,13 @@
       <a target="_blank"><button class="project-button-2">Generative AI</button></a>  
     </p>
 
-    <p class="bold-text"> <span style="color:green;">✔️</span> Step 4: Model Verfication
+    <p class="bold-text"> ✔️ 4: Model Verfication
     
       <a target="_blank"><button class="project-button-3">Advanced Statistics</button></a>
 
     </p>
 
-    <p class="bold-text"> 🚀 Step 5: Model Deployement
+    <p class="bold-text"> 🚀 5: Model Deployement
       <a target="_blank"><button class="project-button-3"> ML-Infrastructure </button></a>
       <a target="_blank"><button class="project-button-3"> System-Designing </button></a>  
     </p>
@@ -292,32 +305,7 @@
 
   </div>
 
-  <div id="areaofinterest" class="tabcontent">
-    <!-- Content for My Latest Projects -->
-    <p class="centered">
-      <a  class="button">Web Scrapping</a>
-      <a  class="button">Exploratory Data Analysis(EDA)</a>
-      <a  class="button">Machine Learning</a>
-      <a  class="button">Deep Learning</a>
-    </p>
-    <p class="centered">
-      <a  class="button">Convolutional Neural Networks(CNN)</a>
-      <a  class="button">Natural Language Processing (NLP)</a>
-      <a  class="button">LangChain</a>
-      <a  class="button">Genarative AI</a>
-    </p>
-    <p class="centered">
-      <a  class="button">ML Infrastructure</a>
-      <a  class="button">Reinforcement Learning</a>
-      <a  class="button">Pattern Recognition</a>
-      <a  class="button">Augmented Realy & Virtual Reality</a>
-    </p>
-  </div>
-  
 
-
-
-    
   <script>
       function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
@@ -339,6 +327,8 @@
         evt.currentTarget.classList.add("active");
       }
   </script>
+
+
 
 
 

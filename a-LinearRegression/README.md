@@ -1,5 +1,4 @@
-# Linear Regression (Using Multiple Variables)
-
+# Linear Regression 
 This repository contains an illustrative example implemented in a Python Notebook, demonstrating how to predict house prices in dollars based on multiple variables such as area (Sq.ft), number of bedrooms, and age using Linear Regression.
 
 ## Tools Used

@@ -29,14 +29,15 @@ Linear regression is a fundamental technique in machine learning used to model t
 
 ## Notebook File
 
-The main file for this example is `Linear_Regression_Multiple_Variables.ipynb`. Explore the notebook to understand the step-by-step process of implementing Linear Regression for predicting house prices.
+The main file for this example is `linear_regression.ipynb`. Explore the notebook to understand the step-by-step process of implementing Linear Regression for predicting house prices.
 
+![Screenshot 2024-01-03 at 2 14 08 PM](https://github.com/manojbusam/DataScience/assets/44409170/4852f071-4b3a-4081-aab7-852ad2bf904c)
 
 
 ## How to Use
 
 1. Clone the repository.
-2. Open and run the `Linear_Regression_Multiple_Variables.ipynb` notebook using Jupyter Notebook or JupyterLab.
+2. Open and run the `linear_regression.ipynb` notebook using Jupyter Notebook or JupyterLab.
 3. Follow the step-by-step guide in the notebook to understand the implementation and experiment with the example.
 
 Feel free to explore, learn, and enhance the implementation as needed!

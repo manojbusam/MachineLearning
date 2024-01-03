@@ -41,9 +41,13 @@
     h1 {
       text-align: center; /* Center align the h1 */
     }
+
+    h2 {
+      text-align: center; /* Center align the h1 */
+    }
     
     h2, h3, p {
-       color: #333333;; /* Light red color */
+       color: #333333;
     }
 
     p {
@@ -114,6 +118,97 @@
       text-align: center;
     }
 
+    p.bold-text {
+      font-weight: bold;
+    }
+
+    .project-button {
+      background-color: #FF671F;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .project-button:hover {
+      background-color: #ffe1d3;
+      color: navy;
+    }
+
+    .project-button-2 {
+      background-color: white;
+      border: none;
+      color: navy;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .project-button-2:hover {
+      background-color:whitesmoke;
+      color: blueviolet;
+    }
+
+    .project-button-3 {
+      background-color: green;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .project-button-3:hover {
+      background-color: lightgreen;
+      color: navy;
+    }
+
+    .project-button {
+      background-color: #FF671F;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .project-button:hover {
+      background-color: #ffe1d3;
+      color: navy;
+    }
+
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(163, 187, 211);
+      color: #333;
+      text-align: center;
+      padding: 8px 20px;
+    }
+
 
   </style>
 </head>
@@ -123,42 +218,76 @@
     <div class="tab" onclick="openTab(event, 'home')">Home</div>
     <div class="tab" onclick="openTab(event, 'latestprojects')">Latest Data Science Projects</div>
     <div class="tab" onclick="openTab(event, 'areaofinterest')">Areas of Interest</div>
-    <div class="tab" onclick="openTab(event, 'datascience')">Data Science Life Cycle</div>
-    <div class="tab" onclick="openTab(event, 'contactme')">Contact Me</div>
   </div>
   
   <div id="home" class="tabcontent active">
 
-    
-    <!-- Content for Areas of Interest -->
-    <h1>About me</h1>
-    <div class="container">
-      <div class="content">
-        <!-- Your content goes here -->
-        Manoj Busam
-      </div>
-    </div>
-    <div class="container">
-      <div class="content">
-        <!-- Your content goes here -->
-      Software Engineering with Data Science
-      </div>
-    </div>
-    <div class="container">
-      <div class="content">
-        <!-- Your content goes here -->
-        With an unwavering passion for Data Science, I've been on an exploration journey within this captivating field. It's been an exciting pursuit, navigating the depths of data and its applications, seeking insights, and unraveling the mysteries it holds.
-      </div>
-    </div>
+    <h2>
+      Manoj Busam
+    </h2>
 
-    <p class="centered">
-      <a href="https://github.com/manojbusam/DataScience/tree/main" target="_blank" class="button">Data Science</a>
-      <a href="https://github.com/manojbusam/Statistics" target="_blank" class="button">Statistics</a>
-      <a href="https://github.com/manojbusam/DesignPatterns" target="_blank" class="button">Design Patterns</a>
+    <p>
+      As a Senior Software Engineer deeply immersed in Data Science, my specialization includes:
+      <ul>
+        <li>ML: Search, Recommendations, Personalization</li>
+        <li>Neural Networks Focus</li>
+        <li>Strong Math Base</li>
+      </ul>
+      With 7 years of professional experience in Data Science, my journey has centered on:
+      <ul>
+        <li>Impactful Solution Crafting</li>
+        <li>Effective Time Management</li>
+        <li>Value Enhancement</li>
+        <li>Fast Shipment</li>
+      </ul>
+      Here are 5 fundamental stages of a product in my data science journey after Problem Identification and before Customer Acceptance(some with my reference projects):
     </p>
- 
+        
+    <p class="bold-text"> ⚙️ Step 1: Data Pipelines
+    
+    <a target="_blank"><button class="project-button">Web Scrapping</button></a>
+    <a target="_blank"><button class="project-button">Copy to AWS S3</button></a>
+    <a target="_blank"><button class="project-button">Copy to GCP buckets</button></a>
+    <a target="_blank"><button class="project-button">Copy to Azure blobstorage</button></a>
+    <a href="https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0" target="_blank"><button class="project-button">Kafka-Microservices</button></a>
 
-  </div>
+    </p>
+
+    <p class="bold-text"> 📊 Step 2: Data Preparation & Analysis
+    
+      <a href="https://github.com/manojbusam/Statistics" target="_blank"><button class="project-button">Statistics</button></a>
+      <a target="_blank"><button class="project-button"> Programming </button></a>
+      <a target="_blank"><button class="project-button"> Data Visualization </button></a>
+      <a target="_blank"><button class="project-button"> Exploratory Data Analysis </button></a>
+      <a target="_blank"><button class="project-button"> SQL </button></a>
+      <a href="https://github.com/manojbusam/DesignPatterns" target="_blank"><button class="project-button">Design Patterns</button></a>
+  
+    </p>
+
+    <p class="bold-text"> 🛠️ Step 3: Model Building
+      <a href="https://github.com/manojbusam/DataScience" target="_blank"><button class="project-button-2">Machine Learning</button></a>
+      <a target="_blank"><button class="project-button-2">Deep Learning</button></a>
+      <a target="_blank"><button class="project-button-2">Convolutional Neural Networks</button></a>
+      <a target="_blank"><button class="project-button-2">Natural Language Processing</button></a>
+      <a target="_blank"><button class="project-button-2">Generative AI</button></a>  
+    </p>
+
+    <p class="bold-text"> <span style="color:green;">✔️</span> Step 4: Model Verfication
+    
+      <a target="_blank"><button class="project-button-3">Advanced Statistics</button></a>
+
+    </p>
+
+    <p class="bold-text"> 🚀 Step 5: Model Deployement
+      <a target="_blank"><button class="project-button-3"> ML-Infrastructure </button></a>
+      <a target="_blank"><button class="project-button-3"> System-Designing </button></a>
+      <a href="https://github.com/manojbusam/nginx-load-balancer-v1.0" target="_blank"><button class="project-button-3">Nginx-Loadbalancer</button></a>
+      <a href="https://github.com/manojbusam/nginx-reverse-proxy-v1.0" target="_blank"><button class="project-button-3">Nginx-Reverseproxy</button></a>
+      <a href="https://github.com/manojbusam/mvc-nginx-integrated-microservices-v1.0" target="_blank"><button class="project-button-3">Nginx-Microservices</button></a>
+  
+    </p>
+    
+    </div>
 
   <div id="latestprojects" class="tabcontent">
     <!-- Content for Areas of Interest -->
@@ -180,122 +309,22 @@
       <a  class="button">Deep Learning</a>
     </p>
     <p class="centered">
-    <a  class="button">Convolutional Neural Networks(CNN)</a>
+      <a  class="button">Convolutional Neural Networks(CNN)</a>
       <a  class="button">Natural Language Processing (NLP)</a>
       <a  class="button">LangChain</a>
       <a  class="button">Genarative AI</a>
+    </p>
+    <p class="centered">
       <a  class="button">ML Infrastructure</a>
+      <a  class="button">Reinforcement Learning</a>
+      <a  class="button">Pattern Recognition</a>
+      <a  class="button">Augmented Realy & Virtual Reality</a>
     </p>
   </div>
   
-  <div id="datascience" class="tabcontent">
-    <!-- Content for My Latest Projects -->
-    <h1>Data Science Lifecycle</h1>
 
-    <!-- Step 1: Problem Identification and Planning -->
-    <h2>Step 1: Problem Identification and Planning</h2>
-    <p>
-      Define objectives and scope using research, hypotheses, and experimental design.
-    </p>
-    <div class="scientific-methods">
-      <p>- Research Methods: Surveys, interviews, literature reviews.</p>
-      <p>- Hypothesis Formulation: Defining research questions.</p>
-      <p>- Experimental Design: Structuring the approach.</p>
-    </div>
 
-    <!-- Step 2: Data Collection -->
-    <h2>Step 2: Data Collection</h2>
-    <p>
-      Gather and preprocess data from various sources while ensuring data integrity.
-    </p>
-    <div class="scientific-methods">
-      <p>- Observation and Measurement.</p>
-      <p>- Sampling Techniques: Random, stratified, systematic.</p>
-      <p>- Data Governance: Ensuring data integrity.</p>
-    </div>
 
-    <!-- Step 3: Data Preparation & Analysis -->
-    <h2>Step 3: Data Preparation & Analysis</h2>
-    <p>
-      Analyze, visualize, and engineer features to derive insights from data.
-    </p>
-    <div class="scientific-methods">
-      <p>- Exploratory Data Analysis (EDA).</p>
-      <p>- Data Cleaning: Handling inconsistencies.</p>
-      <p>- Feature Engineering: Creating new features.</p>
-      
-
-    </div>
-
-    <!-- Step 4: Model Building -->
-    <h2>Step 4: Model Building</h2>
-    <p>
-      Develop and validate predictive models using various algorithms.
-    </p>
-    <div class="scientific-methods">
-      <p>- Model Development: Implementation and training.</p>
-      <p>- Hyperparameter Tuning.</p>
-      <p>- Algorithm Selection: Classification, Regression, Neural Networks.</p>
-
-    </div>
-
-    <!-- Step 5: Model Evaluation -->
-    <h2>Step 5: Model Evaluation</h2>
-    <p>
-      Assess model performance using evaluation metrics and validation techniques.
-    </p>
-    <div class="scientific-methods">
-      <p>- Performance Metrics selection.</p>
-      <p>- Cross-Validation: k-fold, stratified.</p>
-      <p>- Bias-Variance Analysis.</p>
-    </div>
-
-    <!-- Step 6: Model Deployment -->
-    <h2>Step 6: Model Deployment</h2>
-    <p>
-      Integrate models into production considering scalability and efficiency.
-    </p>
-    <div class="scientific-methods">
-      <p>- Serialization and Deployment.</p>
-      <p>- Scalability and Efficiency considerations.</p>
-    </div>
-
-    <!-- Step 7: User Acceptance Stage -->
-    <h2>Step 7: User Acceptance Stage</h2>
-    <p>
-      Test user interactions and gather feedback for refinement.
-    </p>
-    <div class="scientific-methods">
-      <p>- User Testing: Conducting UAT.</p>
-      <p>- Feedback Analysis.</p>
-    </div>
-
-    <!-- Step 8: Monitoring and Maintenance -->
-    <h2>Step 8: Monitoring and Maintenance</h2>
-    <p>
-      Continuously monitor and adapt models to maintain relevance and effectiveness.
-    </p>
-    <div class="scientific-methods">
-      <p>- Continuous Performance Monitoring.</p>
-      <p>- Necessary Updates and Adaptations.</p>
-    </div>
-
-  </div>
-
-  <div id="contactme"  class="tabcontent">
-    <h1>Contact Information</h1>
-    
-    <div class="container">
-      <div class="content">
-        <!-- Your content goes here -->
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/manoj-busam/" target="_blank">https://www.linkedin.com/in/manoj-busam/</a></p>
-        <p>Email: <a href="mailto:manojbusam@outlook.com">manojbusam@outlook.com</a></p>
-        <p>Discord: <a href="https://discord.com/users/manoj0162" target="_blank">https://discord.com/users/manoj0162</a></p>
-
-      </div>
-    </div>
-
-  </div>
     
   <script>
       function openTab(evt, tabName) {
@@ -321,7 +350,12 @@
 
 
 
+  <footer>
+    <p> <a href="https://www.linkedin.com/in/manoj-busam/" target="_blank">https://www.linkedin.com/in/manoj-busam/</a>
+    | <a href="mailto:manojbusam@outlook.com">manojbusam@outlook.com</a>
+        | <a href="https://discord.com/users/manoj0162" target="_blank">https://discord.com/users/manoj0162</a></p>
 
+  </footer>
   
 </body>
 </html>

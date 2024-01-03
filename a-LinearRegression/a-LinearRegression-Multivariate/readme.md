@@ -14,10 +14,4 @@ This repository contains an implementation of a multivariate linear regression m
   - Building a multivariate linear regression model
   - Model evaluation and predictions
 
-## Usage
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/your-username/multivariate-linear-regression.git
 

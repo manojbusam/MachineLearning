@@ -214,20 +214,35 @@ footer:hover {
   left: 10px; /* Position from left */
 }
 
+ol {
+    list-style-type: none;
+    padding-left: 20px; /* Adjust the amount of spacing */
+  }
+
+  ol.custom-bullets li {
+    counter-increment: custom-counter;
+  }
+
+  ol.custom-bullets li:before {
+    content: counter(custom-counter);
+    margin-right: 0.5em; /* Adjust the space between the bullet and the text */
+  }
+
 
   </style>
 </head>
 <body>
 
   <div class="container-name">
-    <p class="green-dot"> MANOJ BUSAM - Sr. Software Engineer, Machine Learning</p>
+    <p class="green-dot"> MANOJ BUSAM - Sr. Software Engineer, AI/ML Domain</p>
 
   </div>
   
   <div class="tabs-container">
     <ul class="tab-list"> 
-    <li class="tab" onclick="openTab(event, 'home')">Home</li>
-    <li class="tab" onclick="openTab(event, 'latestprojects')">Latest Data Science Projects</li>
+    <li class="tab" onclick="openTab(event, 'home')"> <u>Home</u> </li>
+    <li class="tab" onclick="openTab(event, 'latestcertifications')"> <u>My Latest Certifications</u></li>
+    <li class="tab" onclick="openTab(event, 'latestprojects')"> <u>My Recent Data Science Projects</u></li>
     <li class="tab" > <a href="https://www.linkedin.com/in/manoj-busam/" target="_blank" > Linkedin </a> </li>  
     </ul>
   </div>
@@ -238,7 +253,7 @@ footer:hover {
       Hey there! I'm an SWE in the MLOps Domain having a passion for continuous learning on AI/ML. I juggle with SageMaker, Kubernetes, AWS CloudFormation, Helm charts and Nginx Ingress Controllers everyday.
     </p>
     <p>
-      My AI/ML Stack on Designing an ML Pipeline:
+      My Tech Stack on Designing an ML Pipeline:
     </p>
 
     <p class="bold-text"> 🤖 1: ML Dev
@@ -292,21 +307,41 @@ footer:hover {
   <div id="latestprojects" class="tabcontent">
     <!-- Content for Areas of Interest -->
 
-    <p class="centered-2"> 🛠️ My Latest Data Science Projects: </p>
+    <p>  With love for AI/ML, I consistently undertake and execute diverse Data Science projects to continually elevate my expertise in this field. Here's a glimpse into some of my recent Data Science project developments: </p>
 
-    <p class="centered">
-      <a href="https://github.com/manojbusam/ImageClassification" target="_blank" class="button">Image Classification using KNN</a>
-    </p>
+    <ol class="custom-bullets">
+      <li>
+        <a href="https://github.com/manojbusam/ImageClassification" target="_blank" > Image Classification using K-Nearest Neighbour </a> </li>
+      </li>
+      <li>
+        <a href="https://github.com/manojbusam/MachineLearning/tree/main/a-LinearRegression/a-LinearRegression-Multivariate" target="_blank" > Predicting House Prices using Linear Regression (Multivariable) </a> </li>
+      </li>
+      <li>
+        <a href="https://github.com/manojbusam/MachineLearning/tree/main/a-LinearRegression" target="_blank" > Predicting House Prices using Linear Regression </a> </li>
+      </li>
+    </ol>
 
-    <p class="centered">
-      <a href="https://github.com/manojbusam/DataScience/tree/main/a-LinearRegression/a-LinearRegression-Multivariate" target="_blank" class="button">Linear Regression-Multivariate</a>
-    </p>
-   
-    <p class="centered">
-      <a href="https://github.com/manojbusam/DataScience/tree/main/a-LinearRegression" target="_blank" class="button">Linear Regression</a>
-    </p>
 
+  </div>
 
+  <div id="latestcertifications" class="tabcontent">
+    <!-- Content for Areas of Interest -->
+
+    <ol class="custom-bullets">
+      <li>
+        <a href="https://www.freecodecamp.org/certification/ManojBusam/machine-learning-with-python-v7" target="_blank" > Machine Learning with Python (freecodecamp.org)</a> </li>
+      </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/CMPGUWLDHASN" target="_blank" > Advanced Algorithms and Complexity (UC San Deigo) </a> </li>
+      </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/LXAFZCY3ZW6B" target="_blank" > Divide and Conquer, Sorting and Searching, and Randomized Algorithms (Stanford) </a> </li>
+      </li>
+      <li>
+        <a href="https://github.com/manojbusam/JavaSE/blob/main/oracle_cert.pdf" target="_blank" > Oracle Certified Associate, Java SE 8 Programmer 1  </a> </li>
+      </li>
+    </ol>
+    
 
   </div>
 

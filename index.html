@@ -11,7 +11,7 @@
       margin-left: 40px;
       margin-right: 40px;
       font-family: 'Avenir', sans-serif; /* Your chosen font */
-      background-color: lightcyan; 
+      background-color: lightgrey; 
       color: black; /* Navy blue text color */
       background-size: cover; /* Cover the entire viewport */
       background-repeat: no-repeat; /* Prevent image repetition */
@@ -187,7 +187,7 @@
 footer {
   left: 0;
   bottom: 0;
-  background-color: lightcyan;
+  background-color: lightgrey;
   color: #333;
   text-align: center;
   /* Making the text more vibrant */
@@ -199,7 +199,7 @@ footer {
 
 /* Hover effect to make it interactive */
 footer:hover {
-  background-color: lightgrey;
+  background-color: lightskyblue;
 }
 
 .container-name {
@@ -243,6 +243,7 @@ ol {
     <li class="tab" onclick="openTab(event, 'home')"> <u>Home</u> </li>
     <li class="tab" onclick="openTab(event, 'latestcertifications')"> <u>My Latest Certifications</u></li>
     <li class="tab" onclick="openTab(event, 'latestprojects')"> <u>My Recent Data Science Projects</u></li>
+    <li class="tab" onclick="openTab(event, 'latestmlpipelines')"> <u>My Recent ML Infra learnings</u></li>
     <li class="tab" > <a href="https://www.linkedin.com/in/manoj-busam/" target="_blank" > Linkedin </a> </li>  
     </ul>
   </div>
@@ -325,8 +326,6 @@ ol {
   </div>
 
   <div id="latestcertifications" class="tabcontent">
-    <!-- Content for Areas of Interest -->
-
     <ol class="custom-bullets">
       <li>
         <a href="https://www.freecodecamp.org/certification/ManojBusam/machine-learning-with-python-v7" target="_blank" > Machine Learning with Python (freecodecamp.org)</a> </li>
@@ -341,10 +340,15 @@ ol {
         <a href="https://github.com/manojbusam/JavaSE/blob/main/oracle_cert.pdf" target="_blank" > Oracle Certified Associate, Java SE 8 Programmer 1  </a> </li>
       </li>
     </ol>
-    
-
   </div>
 
+  <div id="latestmlpipelines" class="tabcontent">
+    <ol class="custom-bullets">
+      <li>
+        <a href="https://github.com/manojbusam/SageMakerMLPipelines" target="_blank" > ML Pipelines with AWS SageMaker </a> </li>
+      </li>
+    </ol>
+  </div>
 
   <script>
       function openTab(evt, tabName) {
